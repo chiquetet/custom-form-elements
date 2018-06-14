@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Custom Form Elements</title>
+  <!-- using google font -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,500" rel="stylesheet">
+  <!-- importing reset and main css -->
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+  <div class="container">
+    <!-- custom radio button -->
+    <div class="holder">
+      <h2>Custom Radio</h2>
+      <form action="#" class="customRadio">
+        <div class="row">
+          <p>Which text editor do you think is the best?</p>
+        </div>
+        <div class="row">
+          <input type="radio" name="textEditor" id="dreamweaver" checked>
+          <label for="dreamweaver">Adobe Dreamweaver</label>
+        </div>
+        <div class="row">
+          <input type="radio" name="textEditor" id="sublime">
+          <label for="sublime">Sublime Text</label>
+        </div>
+        <div class="row">
+          <input type="radio" name="textEditor" id="vscode">
+          <label for="vscode">Visual Studio Code</label>
+        </div>
+        <div class="row">
+          <input type="radio" name="textEditor" id="notepad">
+          <label for="notepad">Notepad++</label>
+        </div>
+      </form>
+    </div>
+    <!-- custom checkbox -->
+    <div class="holder">
+      <h2>Custom Checkbox</h2>
+      <form action="#" class="customCheckbox">
+        <div class="row">
+          <p>Which programming language do you want to learn?</p>
+        </div>
+        <div class="row">
+          <input type="checkbox" id="javascript" checked>
+          <label for="javascript">Javascript</label>
+        </div>
+        <div class="row">
+          <input type="checkbox" id="php">
+          <label for="php">PHP</label>
+        </div>
+        <div class="row">
+          <input type="checkbox" id="python">
+          <label for="python">Python</label>
+        </div>
+        <div class="row">
+          <input type="checkbox" id="dotnet">
+          <label for="dotnet">.Net</label>
+        </div>
+        <div class="row">
+          <input type="checkbox" id="node">
+          <label for="node">Node JS</label>
+        </div>
+      </form>
+    </div>
+    <!-- custom select -->
+    <div class="holder">
+      <h2>Custom Select</h2>
+      <form action="#" class="customSelect">
+        <div class="row">
+          <p>Please select the payment method.</p>
+        </div>
+        <div class="row">
+          <div class="select">
+            <select>
+              <option>Debit / Master Card</option>
+              <option>Credit Card</option>
+              <option>Bank Transfer</option>
+              <option>Paypal</option>
+              <option>Skrill</option>
+            </select>
+          </div>
+        </div>
+      </form>
+    </div>
+    <!-- custom toggle switch -->
+    <div class="holder">
+      <h2>Custom Toggle Switch</h2>
+      <form action="#" class="customToggle">
+        <div class="row">
+          <p>Do you want to proceed?</p>
+        </div>
+        <div class="row">
+          <input type="checkbox" id="toggle">
+          <label for="toggle">
+            <span class="yes">Yes</span>
+            <span class="no">No</span>
+          </label>
+        </div>
+      </form>
+    </div>
+  </div>
+</body>
+
+</html>
