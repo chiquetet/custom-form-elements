@@ -76,6 +76,46 @@ h2 {
   transform: scale(1);
 }
 
+/* custom radio with image */
+
+.customRadioWithImage input[type="radio"] {
+  position: absolute;
+  left: -9999px;
+}
+
+.customRadioWithImage input[type="radio"]+label .image {
+  position: relative;
+  cursor: pointer;
+  display: inline-block;
+  vertical-align: middle;
+  border: 1px solid #333;
+  border-radius: 50%;
+}
+
+.customRadioWithImage input[type="radio"]+label .image img {
+  position: relative;
+  border-radius: 50%;
+}
+
+.customRadioWithImage input[type="radio"]+label .image:after {
+  content: '';
+  border: 4px solid #1cbe9d;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transform: scale(1.2);
+  transition: transform 0.3s linear, opacity 0.3s linear;
+}
+
+.customRadioWithImage input[type="radio"]:checked+label .image:after {
+  opacity: 1;
+  transform: scale(1);
+}
+
 /* custom checkbox */
 
 .customCheckbox input[type="checkbox"] {
